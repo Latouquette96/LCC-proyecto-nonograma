@@ -1,7 +1,6 @@
 
 :- module(init, [ init/3 ]).
 
-
 /**
 * init(PistasFilas, PistasColumnas, Grilla)
 * @param {PistasFilas} Lista que contiene n listas de números enteros.

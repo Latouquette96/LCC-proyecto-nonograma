@@ -6,8 +6,6 @@
 :-use_module(library(lists)).
 
 
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 % replace(?X, +XIndex, +Y, +Xs, -XsY)
@@ -165,11 +163,3 @@ recuperar_elemento(0, [F | _Fila], F).
 recuperar_elemento(ColN, [_F | Fila], E) :-
 	ColNaux is ColN - 1,
 	recuperar_elemento(ColNaux, Fila, E).
-
-
-recuperar_grilla_juego(Grilla):-
-	grilla_juego(Grilla),
-	retract(grilla_juego(Grilla)).
-
-recuperar_grilla_solucion(Grilla):-
-	grilla_solucion(Grilla).
